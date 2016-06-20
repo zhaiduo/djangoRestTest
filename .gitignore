@@ -28,5 +28,5 @@ msyh.ttf
 *.rest
 *.prof
 ENV
-*sqllite3
+db.sqlite3
 __pycache__
