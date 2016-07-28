@@ -26,3 +26,16 @@ Run `brew linkapps python3` to symlink these to /Applications.
 
 http://www.django-rest-framework.org/tutorial/quickstart/
 ```
+
+##FAQ
+* No module named zlib when use virtualenv --python=/usr/local/bin/python3?
+* ImportError: cannot import name 'HTTPSHandler'?
+```
+xcode-select --install
+brew install openssl
+brew link --overwrite --dry-run openssl --force
+brew link openssl --overwrite --force
+brew reinstall python3  --with-brewed-openssl
+```
+
+
